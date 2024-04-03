@@ -5,7 +5,7 @@ class Task4
     public static void Main(string[] args)
     {
         int number = ReadInt();
-        Console.WriteLine($"Вы ввели число: {number}");
+        Console.WriteLine($"Р’РІРµРґРµРЅРѕ С‡РёСЃР»Рѕ: {number}");
     }
 
     static int ReadInt()
@@ -13,7 +13,7 @@ class Task4
         int number;
         while (true)
         {
-            Console.WriteLine("Введите число:");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:");
             string input = Console.ReadLine();
             if (int.TryParse(input, out number))
             {
@@ -21,7 +21,7 @@ class Task4
             }
             else
             {
-                Console.WriteLine("Неверный ввод. Пожалуйста, введите число.");
+                Console.WriteLine("Р­С‚Рѕ РЅРµ С‡РёСЃР»Рѕ. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ РµС‰С‘ СЂР°Р·");
             }
         }
     }
