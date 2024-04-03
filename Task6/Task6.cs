@@ -4,15 +4,19 @@ class Task6
 {
     public static void Main(string[] args)
     {
-        Animal lion = new Animal("лев", "мужской", "рррр");
+        Animal lion = new Animal("лев Рык", "мужской", "рррр");
+        Animal lionTwo = new Animal("лев Туш", "мужской", "рррр");
         Animal elephant = new Animal("слон", "мужской", "фррр");
-        Animal giraffe = new Animal("жираф", "женский", "ням-ням");
-        Animal monkey = new Animal("обезьяна", "женский", "уа-уаа");
+        Animal giraffe = new Animal("жираф Олли", "женский", "ням-ням");
+        Animal giraffeTwo = new Animal("жираф Раф", "мужской", "ням-ням");
+        Animal giraffeThree = new Animal("жираф Рон", "мужской", "ням-ням");
+        Animal monkey = new Animal("обезьяна Нола", "женский", "уа-уаа");
+        Animal monkeyTwo = new Animal("обезьяна Крык", "мужской", "уа-уаа");
 
-        Enclosure lionEnclosure = new Enclosure("львы", 2, new Animal[] { lion });
+        Enclosure lionEnclosure = new Enclosure("львы", 2, new Animal[] { lion, lionTwo });
         Enclosure elephantEnclosure = new Enclosure("слоны", 1, new Animal[] { elephant });
-        Enclosure giraffeEnclosure = new Enclosure("жирафы", 3, new Animal[] { giraffe });
-        Enclosure monkeyEnclosure = new Enclosure("обезьяны", 4, new Animal[] { monkey });
+        Enclosure giraffeEnclosure = new Enclosure("жирафы", 3, new Animal[] { giraffe, giraffeTwo, giraffeThree});
+        Enclosure monkeyEnclosure = new Enclosure("обезьяны", 2, new Animal[] { monkey, monkeyTwo });
 
         int choice = 1;
         while (choice != 5)
