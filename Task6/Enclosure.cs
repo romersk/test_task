@@ -15,8 +15,8 @@ public class Enclosure
 
     public void ApproachEnclosure()
     {
-        Console.WriteLine($"Вы подошли к вольеру с {Type}. В вольере находится {NumberOfAnimals} животных.");
-        Console.WriteLine("Звуки животных:");
+        Console.WriteLine($"РЎРµР№С‡Р°СЃ РІ РІРѕР»СЊРµСЂРµ {Type}. РС… РєРѕР»РёС‡РµСЃС‚РІРѕ - {NumberOfAnimals}.");
+        Console.WriteLine("РР· РЅРёС…:");
         foreach (Animal animal in Animals)
         {
             animal.MakeSound();
