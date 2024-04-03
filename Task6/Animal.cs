@@ -15,6 +15,6 @@ public class Animal
 
     public void MakeSound()
     {
-        Console.WriteLine($"Животное {Name} ({Gender}) издает: {Sound}");
+        Console.WriteLine($"РРјСЏ - {Name} ({Gender}) РёР·РґР°РµС‚ Р·РІСѓРєРё: {Sound}");
     }
 }
