@@ -2,7 +2,7 @@ using System;
 
 class Task6
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         Animal lion = new Animal("лев", "мужской", "рррр");
         Animal elephant = new Animal("слон", "мужской", "фррр");
