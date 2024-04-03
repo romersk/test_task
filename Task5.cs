@@ -16,9 +16,9 @@ class Task5
         while (purchases.Count > 0)
         {
             totalMoney += purchases.Dequeue();
-            Console.WriteLine($"Общая сумма денег на счету: {totalMoney}");
+            Console.WriteLine($"РљРѕР»РёС‡РµСЃС‚РІРѕ РґРµРЅРµРі РЅР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚: {totalMoney}");
         }
 
-        Console.WriteLine("Очередь закончилась.");
+        Console.WriteLine("РћС‡РµСЂРµРґСЊ РѕРїСѓСЃС‚РµР»Р°.");
     }
 }
