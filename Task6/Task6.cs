@@ -4,25 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Animal lion = new Animal("Лев", "мужской", "Рррррр");
-        Animal elephant = new Animal("Слон", "женский", "Фрррр");
-        Animal giraffe = new Animal("Жираф", "мужской", "Ням-ням");
-        Animal monkey = new Animal("Обезьяна", "женский", "Уаааа");
+        Animal lion = new Animal("Р»РµРІ", "РјСѓР¶СЃРєРѕР№", "СЂСЂСЂСЂ");
+        Animal elephant = new Animal("СЃР»РѕРЅ", "РјСѓР¶СЃРєРѕР№", "С„СЂСЂСЂ");
+        Animal giraffe = new Animal("Р¶РёСЂР°С„", "Р¶РµРЅСЃРєРёР№", "РЅСЏРј-РЅСЏРј");
+        Animal monkey = new Animal("РѕР±РµР·СЊСЏРЅР°", "Р¶РµРЅСЃРєРёР№", "СѓР°-СѓР°Р°");
 
-        Enclosure lionEnclosure = new Enclosure("львы", 2, new Animal[] { lion });
-        Enclosure elephantEnclosure = new Enclosure("слоны", 1, new Animal[] { elephant });
-        Enclosure giraffeEnclosure = new Enclosure("жирафы", 3, new Animal[] { giraffe });
-        Enclosure monkeyEnclosure = new Enclosure("обезьяны", 4, new Animal[] { monkey });
+        Enclosure lionEnclosure = new Enclosure("Р»СЊРІС‹", 2, new Animal[] { lion });
+        Enclosure elephantEnclosure = new Enclosure("СЃР»РѕРЅС‹", 1, new Animal[] { elephant });
+        Enclosure giraffeEnclosure = new Enclosure("Р¶РёСЂР°С„С‹", 3, new Animal[] { giraffe });
+        Enclosure monkeyEnclosure = new Enclosure("РѕР±РµР·СЊСЏРЅС‹", 4, new Animal[] { monkey });
 
         int choice = 1;
         while (choice != 5)
         {
-            Console.WriteLine("Что хотите посмотреть в зоопарке:");
-            Console.WriteLine("1. Вольер с львами");
-            Console.WriteLine("2. Вольер с слонами");
-            Console.WriteLine("3. Вольер с жирафами");
-            Console.WriteLine("4. Вольер с обезьянами");
-            Console.WriteLine("5. Выйти из зоопарка");
+            Console.WriteLine("Р’С‹Р±РµСЂРё РґРµР№СЃС‚РІРёСЏ РІ Р·РѕРѕРїР°СЂРєРµ:");
+            Console.WriteLine("1. РџРѕСЃРјРѕС‚СЂРµС‚СЊ РІРѕР»СЊРµСЂ Р»СЊРІРѕРІ");
+            Console.WriteLine("2. РџРѕСЃРјРѕРѕС‚СЂРµС‚СЊ РІРѕР»СЊРµСЂ СЃР»РѕРЅРѕРІ");
+            Console.WriteLine("3. РџРѕСЃРјРѕС‚СЂРµС‚СЊ РІРѕР»СЊРµСЂ Р¶РёСЂР°С„РѕРІ");
+            Console.WriteLine("4. РџРѕСЃРјРѕС‚СЂРµС‚СЊ РІРѕР»СЊРµСЂ РѕР±РµР·СЊСЏРЅ");
+            Console.WriteLine("5. Р’С‹Р№С‚Рё РёР· Р·РѕРѕРїР°СЂРєР°");
 
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
@@ -42,7 +42,7 @@ class Program
                 case 5:
                     break;
                 default:
-                    Console.WriteLine("Неверный выбор.");
+                    Console.WriteLine("РўР°РєРѕРіРѕ РїСѓРЅРєС‚Р° РЅРµС‚. Р’С‹Р±РµСЂРё РµС‰Рµ СЂР°Р·");
                     break;
             }
         }
